@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Clone</title>
+</head>
+<body>
+<h1> <center>Welcome to Instagram Clone</center></h1><hr>
+<h3><center>Sign Up</center></h3>
+            <h4>{{ today }}</h4>
+
+    <div>
+        <form method="post">
+            {% csrf_token %}
+               <center> <label for="username">Username: </label>
+                <input id="username" type="text" size="39" name="username" value={{ username }}>
+                <br>
+                   <br>
+                   <br>
+
+                <label for="name">Name: </label>
+                <input id="name"  type="text" size="43" name="name" value={{ name }}>
+                <br>
+                   <br>
+                   <br>
+
+                <label for="email">Email: </label>
+                <input id="email" type="text" size="43" name="email" value={{ email }}>
+                <br>
+                   <br>
+                   <br>
+
+
+                <label for="password">Password: </label>
+                <input id="password" type="password" size="40" name="password" value={{ password }}>
+                <br>
+                   <br>
+                   <br>
+                <input type="submit" value="Sign Up"><br>
+                   <br>
+                   <hr>
+                </center>
+        </form>
+    </div>
+
+
+    </div><br><br>
+
+<center><div><h3>already a user?</h3><a href="login/">Login</a> </div></center>
+</body>
+</html>
+
+</center>

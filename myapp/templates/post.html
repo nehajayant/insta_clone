@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Post</title>
+</head>
+
+<body>
+    <div id="header"> <b>Instagram <b/></div>
+    <div id="heading1">Upload Media </div>
+    <div align="center">
+        <form method="post" enctype="multipart/form-data" id="form" style="width:500px;">
+            {% csrf_token %}
+            <input id="image" name="image" type="file"  value={{ image }}><br>
+            <input id="caption" name="caption" type="text" placeholder="Caption" size="35" value={{ caption }}><br>
+            <input type="submit" class="button" value="Add Image">
+        </form>
+    </div>
+</body>
+
+</html>
